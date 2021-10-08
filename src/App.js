@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/NavBar/Navbar';
 import "./App.css"
 import Banner from './components/Banner/Banner';
+import Rowpost from './components/RowPost/Rowpost';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner/>
+      <Rowpost/>
     </div>
   )
 }
