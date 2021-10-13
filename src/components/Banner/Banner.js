@@ -11,7 +11,16 @@ function Banner() {
             setMovie(response.data.results[2])
         })
     },[])
-   
+   /* {const showType=()=>{
+        if (movie && movie.media_type==='tv'){
+            console.log(movie.name);
+            return movie.name
+        }
+        else if (movie && movie.media_type==='movie'){
+            console.log(movie.title);
+            return movie.title
+        }
+    }} */
     return (
         <div 
         style={{backgroundImage: `url(${movie ? imageUrl+movie.backdrop_path : ""})`}}
