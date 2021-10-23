@@ -3,21 +3,29 @@ import Navbar from './components/NavBar/Navbar';
 import "./App.css"
 import Banner from './components/Banner/Banner';
 import Rowpost from './components/RowPost/Rowpost';
-import {action, comedy, horror, originals,romance} from './urls'
+import Netflix from './components/Netflix/Netflix';
+import { action, comedy, horror, originals, romance } from './urls'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
 function App() {
- 
+
   return (
     <div className="App">
-      <Navbar/>
-      <Banner/>
-      <Rowpost title='Netflix Originals' url={originals}/>
-      <Rowpost title='Action' url={action} isSmall />
-      <Rowpost title='Romance' url={romance} isSmall />
-      <Rowpost title='Horror' url={horror} isSmall />
-      <Rowpost title='Comedy' url={comedy} isSmall />
-      
+      <Router>
+        <Route exact path="/">
+          <Netflix />
+        </Route>
+        <Route path="/home">
+          <Navbar />
+          <Banner />
+          <Rowpost title='Netflix Originals' url={originals} />
+          <Rowpost title='Action' url={action} isSmall />
+          <Rowpost title='Romance' url={romance} isSmall />
+          <Rowpost title='Horror' url={horror} isSmall />
+          <Rowpost title='Comedy' url={comedy} isSmall />
+        </Route>
+      </Router>
 
     </div>
   )
