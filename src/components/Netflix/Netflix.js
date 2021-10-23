@@ -1,5 +1,11 @@
 import React from 'react'
 import './Netflix.css'
+import enjoy from "./images/Enjoy.png"
+import download from "./images/Download.png"
+import watch from "./images/Watch.png"
+import children from "./images/children.png"
+
+
 
 function Netflix() {
     return (
@@ -35,7 +41,7 @@ function Netflix() {
                                 <div className="form">
                                     <form className="contentForm" action="">
                                         <input className="inputEmail" placeholder="Email Address" type="email"></input>
-                                        <button className="formButton">Get Started ></button>
+                                        <button className="formButton">Get Started {">"} </button>
                                     </form>
                                 </div>
                             </div>
@@ -44,25 +50,78 @@ function Netflix() {
 
                 </div>
                 <div className="second">
-
+                    <div className="secContent">
+                        <div className="contentMain">
+                            <h1>Enjoy on your TV.</h1>
+                            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+                        </div>
+                        <div className="contentImage">
+                            <img src={enjoy} alt="" />
+                        </div>
+                    </div>
                 </div>
-                <div className="third">
-
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentImage">
+                            <img src={download} alt="" />
+                        </div>
+                        <div className="contentMain">
+                            <h1>Download your shows to watch offline.</h1>
+                            <h3>Save your favourites easily and always have something to watch.</h3>
+                        </div>
+                    </div>
                 </div>
-                <div className="fourth">
-
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentMain">
+                            <h1>Watch everywhere.</h1>
+                            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+                        </div>
+                        <div className="contentImage">
+                            <img src={watch} alt="" />
+                        </div>
+                    </div>
                 </div>
-                <div className="fifth">
-
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentImage">
+                            <img src={children} alt="" />
+                        </div>
+                        <div className="contentMain">
+                            <h1>Create profiles for children.</h1>
+                            <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+                        </div>
+                    </div>
                 </div>
-                <div className="sixth">
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentMain">
 
+                        </div>
+                        <div className="contentImage">
+
+                        </div>
+                    </div>
                 </div>
-                <div className="seventh">
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentImage">
 
+                        </div>
+                        <div className="contentMain">
+
+                        </div>
+                    </div>
                 </div>
-                <div className="eighteth">
+                <div className="second">
+                <div className="secContent">
+                        <div className="contentMain">
 
+                        </div>
+                        <div className="contentImage">
+
+                        </div>
+                    </div>
                 </div>
 
             </div>

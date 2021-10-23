@@ -1,11 +1,13 @@
 .landingPage{
     width: 100%;
     height: auto;
+    background-color: grey;
 }
 .first{
     width: 100%;
     height: 100vh;
     background-color: white;
+    margin-bottom: 0.5%;
 }
 .first .background{
     width: 100%;
@@ -142,38 +144,32 @@ padding-top: 4%;
     font-weight: bolder;
     border-style: solid;
 }
-
-
-
-
-
-
 .second{
-    height: 30em;
+    height: 75vh;
     background-color: black;
+    margin-bottom: 0.5%;
+}
+.secContent{
+    width: 90%;
+    height: 70%;
+    padding: 5% 5%;
+    display: flex;
+}
+.contentMain{
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+.contentMain h1{
+    font-size: 330%;
+    padding: 10% 0% 5% 5%;
+}
+.contentMain h3{
+    font-weight: 400;
+    padding-left: 5%;
+}
+.contentImage{
+    width: 50%;
+    height: 100%;
 }
 
-.third{
-    height: 30em;
-    background-color:blanchedalmond;
-}
-.fourth{
-    height: 30em;
-    background-color: black;
-}
-.fifth{
-    height: 30em;
-    background-color: white;
-}
-.sixth{
-    height: 30em;
-    background-color: black;
-}
-.seventh{
-    height: 30em;
-    background-color: white;
-}
-.eighteth{
-    height: 30em;
-    background-color: black;
-}
