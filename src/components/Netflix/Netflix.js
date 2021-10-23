@@ -24,7 +24,21 @@ function Netflix() {
                             </div>
                         </div>
                         <div className="content">
-
+                            <div className="content-inside">
+                                <div className="title">
+                                    <div>
+                                    <h1>Unlimited movies, TV shows and more.</h1>
+                                    </div>
+                                   <div className="subTitle1"> <span >Watch anywhere. Cancel anytime.</span></div>
+                                   <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
+                                </div>
+                                <div className="form">
+                                    <form className="contentForm" action="">
+                                        <input className="inputEmail" placeholder="Email Address" type="email"></input>
+                                        <button className="formButton">Get Started ></button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
