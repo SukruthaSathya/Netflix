@@ -33,10 +33,10 @@ function Netflix() {
                             <div className="content-inside">
                                 <div className="title">
                                     <div>
-                                    <h1>Unlimited movies, TV shows and more.</h1>
+                                        <h1>Unlimited movies, TV shows and more.</h1>
                                     </div>
-                                   <div className="subTitle1"> <span >Watch anywhere. Cancel anytime.</span></div>
-                                   <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
+                                    <div className="subTitle1"> <span >Watch anywhere. Cancel anytime.</span></div>
+                                    <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
                                 </div>
                                 <div className="form">
                                     <form className="contentForm" action="">
@@ -61,7 +61,7 @@ function Netflix() {
                     </div>
                 </div>
                 <div className="second">
-                <div className="secContent">
+                    <div className="secContent">
                         <div className="contentImage">
                             <img src={download} alt="" />
                         </div>
@@ -72,7 +72,7 @@ function Netflix() {
                     </div>
                 </div>
                 <div className="second">
-                <div className="secContent">
+                    <div className="secContent">
                         <div className="contentMain">
                             <h1>Watch everywhere.</h1>
                             <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
@@ -83,7 +83,7 @@ function Netflix() {
                     </div>
                 </div>
                 <div className="second">
-                <div className="secContent">
+                    <div className="secContent">
                         <div className="contentImage">
                             <img src={children} alt="" />
                         </div>
@@ -93,37 +93,55 @@ function Netflix() {
                         </div>
                     </div>
                 </div>
-                <div className="second">
-                <div className="secContent">
-                        <div className="contentMain">
+                <div className="third">
+                    <div className="thirdContent">
+                        <h1>Frequently Asked Questions</h1>
+                        <h3>What is Netflix?</h3>
+                        <h3>How much does Netflix cost?</h3>
+                        <h3>Where can I watch?</h3>
+                        <h3>How do I cancel?</h3>
+                        <h3>What can I watch on Netflix?</h3>
+                        <h3>Is Netflix good for kids?</h3>
+                       
+                        <div className="">
 
                         </div>
-                        <div className="contentImage">
+                        <div className="">
 
                         </div>
-                    </div>
-                </div>
-                <div className="second">
-                <div className="secContent">
-                        <div className="contentImage">
-
-                        </div>
-                        <div className="contentMain">
-
-                        </div>
-                    </div>
-                </div>
-                <div className="second">
-                <div className="secContent">
-                        <div className="contentMain">
-
-                        </div>
-                        <div className="contentImage">
+                        <div className="">
 
                         </div>
                     </div>
                 </div>
-
+                <div className="last">
+                    <div className="lastContent">
+                        <p className="lastTop">Questions? Call 000-800-040-1843</p>
+                        <ul className="lastList">
+                            <li className="listText"> <a href="https://help.netflix.com/en/node/412" >FAQ</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/en/">Help Centre</a> </li>
+                            <li className="listText"> <a href="https://www.netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a> </li>
+                            <li className="listText"> <a href="https://media.netflix.com/en/">Media Centre</a> </li>
+                            <li className="listText"> <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a> </li>
+                            <li className="listText"> <a href="https://jobs.netflix.com/">Jobs</a> </li>
+                            <li className="listText"> <a href="https://devices.netflix.com/en/">Ways to Watch</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/legal/privacy">Privacy</a> </li>
+                            <li className="listText"> <a href="ht">Cookies Preferences</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/en/contactus">Contact Us</a> </li>
+                            <li className="listText"> <a href="https://fast.com/">Speed Test</a> </li>
+                            <li className="listText"> <a href="https://help.netflix.com/legal/notices">Legal Notices</a> </li>
+                            <li className="listText"> <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a> </li>
+                        </ul>
+                        <div className="lastLang">
+                            <i className="fas fa-globe"></i>
+                            <span className="Lang">English</span>
+                            <i className="fas fa-caret-down	"></i>
+                        </div>
+                        <p className="lastFoot">Netflix India</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
