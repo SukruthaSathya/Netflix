@@ -192,10 +192,53 @@ padding-top: 4%;
     color: white;
     font-size: 300%;
     text-align: center;
+    margin-bottom: 5%;
 }
-.thirdContent h3{
+.thirdContent .queries{
     color: white;
-    text-align: center;
+    background-color: rgb(39, 38, 38);
+    margin: 0% 5% 1%;
+    padding: 2% 0%;
+    padding-left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.queries h2{
+    font-size: 175%;
+    font-weight: normal;
+
+}
+.queries i{
+    text-align: end;
+    padding-right: 1%;
+    font-size: 160%;
+}
+.thirdContent .subTitle2{
+    color: white;
+font-size: 110%;
+padding-top: 4%;
+text-align: center;
+}
+.thirdContent .form{
+    width: 100%;
+    height: 15%;
+    padding-top: 2%;
+}
+.thirdContent .form .contentForm{
+    height: 100%;
+    display: flex;
+}
+.thirdContent .form .inputEmail{
+    width: 65%;
+}
+.thirdContent .form .formButton{
+    height: 110%;
+    width: 34%;
+    color: white;
+    background-color: red;
+    font-size: 140%;
+    font-weight: bolder;
+    border-style: solid;
 }
 .last{
     background-color: black;

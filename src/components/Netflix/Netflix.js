@@ -95,23 +95,21 @@ function Netflix() {
                 </div>
                 <div className="third">
                     <div className="thirdContent">
-                        <h1>Frequently Asked Questions</h1>
-                        <h3>What is Netflix?</h3>
-                        <h3>How much does Netflix cost?</h3>
-                        <h3>Where can I watch?</h3>
-                        <h3>How do I cancel?</h3>
-                        <h3>What can I watch on Netflix?</h3>
-                        <h3>Is Netflix good for kids?</h3>
-                       
-                        <div className="">
-
-                        </div>
-                        <div className="">
-
-                        </div>
-                        <div className="">
-
-                        </div>
+                        <h1>Frequently Asked Questions  </h1>
+                        <div className="queries">
+                        <h2>What is Netflix? </h2><i className="fas fa-plus"></i></div>
+                        <div className="queries"><h2>How much does Netflix cost? </h2><i className="fas fa-plus"></i></div>
+                        <div className="queries"><h2>Where can I watch? </h2><i className="fas fa-plus"></i></div>
+                        <div className="queries"><h2>How do I cancel?</h2><i className="fas fa-plus"></i></div>
+                        <div className="queries"><h2>What can I watch on Netflix?</h2><i className="fas fa-plus"></i></div>
+                        <div className="queries"><h2>Is Netflix good for kids?</h2><i className="fas fa-plus"></i></div>
+                        <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
+                        <div className="form">
+                                    <form className="contentForm" action="">
+                                        <input className="inputEmail" placeholder="Email Address" type="email"></input>
+                                        <button className="formButton">Get Started {">"} </button>
+                                    </form>
+                                </div>
                     </div>
                 </div>
                 <div className="last">
