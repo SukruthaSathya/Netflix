@@ -3,7 +3,7 @@ import './signIn.css'
 import '../Netflix/Netflix.css'
 
 
-function signIn() {
+function SignIn() {
     return (
         <div>
             <div className="signInPage">
@@ -43,4 +43,4 @@ function signIn() {
     )
 }
 
-export default signIn
+export default SignIn

@@ -59,7 +59,7 @@
     margin-bottom: 5%;
     border-radius: 3px;
 }
-::placeholder{
+.formInput::placeholder{
     color: white;
     font-size: medium;
     padding-left: 2%;

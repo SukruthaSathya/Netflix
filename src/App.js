@@ -4,7 +4,8 @@ import "./App.css"
 import Banner from './components/Banner/Banner';
 import Rowpost from './components/RowPost/Rowpost';
 import Netflix from './components/Netflix/Netflix';
-import SignIn from './components/SignIn/signIn';
+import SignIn from './components/SignIn/SignIn';
+import SignUp from './components/SignUp/SignUp';
 import { action, comedy, horror, originals, romance } from './urls'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/sign-in">
           <SignIn/>
+        </Route>
+        <Route path="/sign-up">
+          <SignUp/>
         </Route>
         <Route path="/home">
           <Navbar />

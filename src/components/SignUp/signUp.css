@@ -1,0 +1,62 @@
+.signUpPage{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.signUpHead{
+    height: 20%;
+    display: flex;
+    padding: 0 3%;
+}
+.logoImage{
+    width: 90%;
+}
+.logoImage .headImage{
+    height: 30%;
+    width: 15%;
+    padding-top: 4%;
+}
+.signUpHead .signIn{
+    width: 10%;
+    padding-top: 3%;
+}
+.signUpHead .signIn a{
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+.signUpContent{
+    height: 80%;
+}
+.contentInside{
+    width: 30%;
+    height: 70%;
+    margin: 4% 35%;
+    display: flex;
+    flex-direction: column;
+}
+.formHeading{
+    height: 17%;
+    font-size: x-large;
+    color: rgb(39, 38, 38);
+}
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+}
+.signUpForm input{
+    margin-top: 7%;
+    padding: 4% 0;
+}
+.signUpForm .submitSignUp{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    margin-top: 13%;
+    padding: 5% 0;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
