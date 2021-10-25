@@ -12,7 +12,7 @@ function Netflix() {
         <div className="landingPage">
             <div >
                 <div className="first">
-                    <img className="background" src="https://media-assets-05.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-10557-netflixa--default--1280.jpg" alt="img" />
+                    <img className="backgroundImage" src="https://media-assets-05.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-10557-netflixa--default--1280.jpg" alt="img" />
                     <div className="story">
                         <div className="head">
                             <div className="headContent">

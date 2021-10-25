@@ -4,6 +4,7 @@ import "./App.css"
 import Banner from './components/Banner/Banner';
 import Rowpost from './components/RowPost/Rowpost';
 import Netflix from './components/Netflix/Netflix';
+import SignIn from './components/SignIn/signIn';
 import { action, comedy, horror, originals, romance } from './urls'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -15,6 +16,9 @@ function App() {
       <Router>
         <Route exact path="/">
           <Netflix />
+        </Route>
+        <Route path="/sign-in">
+          <SignIn/>
         </Route>
         <Route path="/home">
           <Navbar />
