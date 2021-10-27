@@ -1,4 +1,5 @@
-import React, { useState,useContext } from 'react'
+import React, { useState,useContext, useEffect } from 'react'
+import { AppContext } from '../../Context/Context'
 import { FirebaseContext } from '../../Context/FirebaseContext'
 import "./signUp.css"
 
@@ -6,11 +7,16 @@ function SignUp() {
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
     const {firebase} =useContext(FirebaseContext)
+    const {email}=useContext(AppContext)
 
     const handleSubmit = (e)=>{
         e.preventDefault()
         console.log(firebase);
     }
+    useEffect(()=>{
+        console.log(email);
+    })
+    
     return (
         <div>
             <div className="signUpPage">
@@ -33,7 +39,7 @@ function SignUp() {
                                 onChange={(e)=>{
                                     setUsername(e.target.value)
                                 }}
-                                type="text" placeholder="username" />
+                                type="text" placeholder="Username" />
                                 <input value={password}
                                 onChange={(e)=>setPassword(e.target.value)} 
                                  type="password" placeholder="Password" />

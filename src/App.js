@@ -8,6 +8,7 @@ import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import { action, comedy, horror, originals, romance } from './urls'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Post from './Context/Context';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Post>
         <Route exact path="/">
           <Netflix />
         </Route>
@@ -33,6 +35,7 @@ function App() {
           <Rowpost title='Horror' url={horror} isSmall />
           <Rowpost title='Comedy' url={comedy} isSmall />
         </Route>
+        </Post>
       </Router>
 
     </div>

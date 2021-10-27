@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Netflix.css'
 import enjoy from "./images/Enjoy.png"
 import download from "./images/Download.png"
 import watch from "./images/Watch.png"
 import children from "./images/children.png"
 import { useHistory } from 'react-router'
+import { AppContext } from '../../Context/Context'
 
 
 
 function Netflix() {
+    const {email}=useContext(AppContext)
+    const {setEmail}=useContext(AppContext)
     const history = useHistory()
     const handleFormSubmit=(e)=>{
         e.preventDefault()
@@ -46,7 +49,9 @@ function Netflix() {
                                 </div>
                                 <div className="form">
                                     <form onSubmit={handleFormSubmit} className="contentForm" action="">
-                                        <input  className="inputEmail" placeholder="Email Address" type="email"></input>
+                                        <input value={email}
+                                        onChange={(e)=>setEmail(e.target.value)}
+                                        className="inputEmail" placeholder="Email Address" type="email"></input>
                                         <button type="submit" className="formButton">Get Started {">"} </button>
                                     </form>
                                 </div>
@@ -147,6 +152,9 @@ function Netflix() {
                     </div>
                 </div>
             </div>
+            <AppContext.Provider value={{email}}>
+                {children}
+            </AppContext.Provider>
         </div>
     )
 }
