@@ -47,7 +47,7 @@ function SignIn() {
                                     </form>
                                 </div>
                                 <div className="signUpWay">
-                                    <p>New to Netflix? <a href="/sign-up">Signup Now</a></p>
+                                    <p>New to Netflix? <a href="/">Signup Now</a></p>
                                     
                                 </div>
                                 <div className="formFoot">

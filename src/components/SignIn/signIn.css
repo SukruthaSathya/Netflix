@@ -58,11 +58,12 @@
     color: white;
     margin-bottom: 5%;
     border-radius: 3px;
+    font-size: 100%;
+    padding-left: 2%;
 }
 .formInput::placeholder{
     color: white;
     font-size: medium;
-    padding-left: 2%;
 }
 
 .formSubmit{

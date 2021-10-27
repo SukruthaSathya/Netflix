@@ -60,3 +60,6 @@
     font-weight: bolder;
     font-size: large;
 }
+.signUpForm .submitSignUp:hover{
+    cursor: pointer;
+}

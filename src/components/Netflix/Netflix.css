@@ -132,6 +132,10 @@ padding-top: 4%;
     font-size: 140%;
     font-weight: bolder;
     border-style: solid;
+
+}
+.content-inside .form .formButton:hover{
+    cursor: pointer;
 }
 .second{
     height: 75vh;
@@ -202,6 +206,9 @@ padding-top: 4%;
     padding-right: 1%;
     font-size: 160%;
 }
+.queries i:hover{
+    cursor: pointer;
+}
 .thirdContent .subTitle2{
     color: white;
 font-size: 110%;
@@ -209,9 +216,9 @@ padding-top: 4%;
 text-align: center;
 }
 .thirdContent .form{
-    width: 100%;
-    height: 15%;
-    padding-top: 2%;
+    width: 65%;
+    margin-top: 2%;
+    margin-left: 17%;
 }
 .thirdContent .form .contentForm{
     height: 100%;
@@ -228,6 +235,10 @@ text-align: center;
     font-size: 140%;
     font-weight: bolder;
     border-style: solid;
+    padding: 1%;
+}
+.thirdContent .form .formButton:hover{
+    cursor: pointer;
 }
 .last{
     background-color: black;

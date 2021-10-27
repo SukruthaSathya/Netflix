@@ -17,6 +17,10 @@ function Netflix() {
         e.preventDefault()
         history.push('/sign-up')
     }
+    const handleSignIn=(e)=>{
+        e.preventDefault()
+        history.push('/sign-in')
+    }
     return (
         <div className="landingPage">
             <div >
@@ -34,7 +38,7 @@ function Netflix() {
                                     <i className="fas fa-caret-down	"></i>
                                 </div>
                                 <div className="headSign">
-                                    <button className="signIn">Sign In</button>
+                                    <button onClick={handleSignIn} className="signIn">Sign In</button>
                                 </div>
                             </div>
                         </div>
@@ -116,9 +120,11 @@ function Netflix() {
                         <div className="queries"><h2>Is Netflix good for kids?</h2><i className="fas fa-plus"></i></div>
                         <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
                         <div className="form">
-                                    <form className="contentForm" action="">
-                                        <input className="inputEmail" placeholder="Email Address" type="email"></input>
-                                        <button className="formButton">Get Started {">"} </button>
+                                    <form onSubmit={handleFormSubmit} className="contentForm" action="">
+                                        <input value={email}
+                                        onChange={(e)=>setEmail(e.target.value)}
+                                        className="inputEmail" placeholder="Email Address" type="email"></input>
+                                        <button type="submit" className="formButton">Get Started {">"} </button>
                                     </form>
                                 </div>
                     </div>
