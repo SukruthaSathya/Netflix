@@ -33,6 +33,7 @@ function Netflix() {
                                     <img className="headImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="logo"></img>
                                 </div>
                                 <div className="headLang">
+                                    
                                     <i className="fas fa-globe"></i>
                                     <span className="Lang">English</span>
                                     <i className="fas fa-caret-down	"></i>
@@ -76,7 +77,7 @@ function Netflix() {
                     </div>
                 </div>
                 <div className="second">
-                    <div className="secContent">
+                    <div className="secContent2">
                         <div className="contentImage">
                             <img src={download} alt="" />
                         </div>
@@ -98,7 +99,7 @@ function Netflix() {
                     </div>
                 </div>
                 <div className="second">
-                    <div className="secContent">
+                    <div className="secContent2">
                         <div className="contentImage">
                             <img src={children} alt="" />
                         </div>
