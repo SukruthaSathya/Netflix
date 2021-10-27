@@ -94,4 +94,34 @@
 .formFoot p{
     font-size: 75%;
 }
+@media screen and (max-width: 500px){
+    .signInPage .backgroundImage{
+        display: none;
+    }
+    .signInPage .story .head .headLogo {
+        height: 40%;
+        width: 15%;
+        padding-top: 3%;
+    }
+    .signInContent .content-inside {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .content-inside .signInForm {
+        padding: 10% 5% 4%;
+        width: 90%;
+    }
+    .formInput{
+        height: 15%;
+    }
+    .formSubmit{
+        height: 15%;
+        font-size: large;
+    }
+    .signInForm .formFill {
+
+    height: 55%;
+    }
+
+}
 
