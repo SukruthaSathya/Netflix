@@ -4,10 +4,16 @@ import enjoy from "./images/Enjoy.png"
 import download from "./images/Download.png"
 import watch from "./images/Watch.png"
 import children from "./images/children.png"
+import { useHistory } from 'react-router'
 
 
 
 function Netflix() {
+    const history = useHistory()
+    const handleFormSubmit=(e)=>{
+        e.preventDefault()
+        history.push('/sign-up')
+    }
     return (
         <div className="landingPage">
             <div >
@@ -39,9 +45,9 @@ function Netflix() {
                                     <div className="subTitle2"><span >Ready to watch? Enter your email to create or restart your membership.</span></div>
                                 </div>
                                 <div className="form">
-                                    <form className="contentForm" action="">
-                                        <input className="inputEmail" placeholder="Email Address" type="email"></input>
-                                        <button className="formButton">Get Started {">"} </button>
+                                    <form onSubmit={handleFormSubmit} className="contentForm" action="">
+                                        <input  className="inputEmail" placeholder="Email Address" type="email"></input>
+                                        <button type="submit" className="formButton">Get Started {">"} </button>
                                     </form>
                                 </div>
                             </div>

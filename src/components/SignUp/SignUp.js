@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState,useContext } from 'react'
+import { FirebaseContext } from '../../Context/FirebaseContext'
 import "./signUp.css"
 
 function SignUp() {
+    const [username,setUsername]=useState('')
+    const [password,setPassword]=useState('')
+    const {firebase} =useContext(FirebaseContext)
+
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        console.log(firebase);
+    }
     return (
         <div>
             <div className="signUpPage">
@@ -19,10 +28,16 @@ function SignUp() {
                             <h3>Set a password to create your account.</h3>
                         </div>
                         <div>
-                            <form className="signUpForm" action="">
-                                <input  type="email" placeholder="Email Address" />
-                                <input type="password" placeholder="Password" />
-                                <button className="submitSignUp">Sign Up</button>
+                            <form onSubmit={handleSubmit} className="signUpForm" action="">
+                                <input value={username}
+                                onChange={(e)=>{
+                                    setUsername(e.target.value)
+                                }}
+                                type="text" placeholder="username" />
+                                <input value={password}
+                                onChange={(e)=>setPassword(e.target.value)} 
+                                 type="password" placeholder="Password" />
+                                <button type='submit' className="submitSignUp">Sign Up</button>
                             </form>
                         </div>
                     </div>
