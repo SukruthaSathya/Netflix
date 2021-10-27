@@ -5,13 +5,13 @@ import download from "./images/Download.png"
 import watch from "./images/Watch.png"
 import children from "./images/children.png"
 import { useHistory } from 'react-router'
-import { AppContext } from '../../Context/Context'
+import { AuthContext } from '../../Context/Context'
 
 
 
 function Netflix() {
-    const {email}=useContext(AppContext)
-    const {setEmail}=useContext(AppContext)
+    const {email}=useContext(AuthContext)
+    const {setEmail}=useContext(AuthContext)
     const history = useHistory()
     const handleFormSubmit=(e)=>{
         e.preventDefault()
@@ -152,9 +152,7 @@ function Netflix() {
                     </div>
                 </div>
             </div>
-            <AppContext.Provider value={{email}}>
-                {children}
-            </AppContext.Provider>
+            
         </div>
     )
 }

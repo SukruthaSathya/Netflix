@@ -51,6 +51,9 @@
     border: 1px white;
     border-style: solid;
 }
+.headLang:hover{
+    cursor: pointer;
+}
 
 .headLang i{
     color: white;
@@ -74,7 +77,9 @@
     font-weight: bolder;
     border-radius: 5%;
 }
-
+.headSign .signIn:hover{
+    cursor: pointer;
+}
 
 .first .story .content{
     height: 88%;

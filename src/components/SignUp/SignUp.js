@@ -1,21 +1,35 @@
 import React, { useState,useContext, useEffect } from 'react'
-import { AppContext } from '../../Context/Context'
+import { useHistory } from 'react-router'
+import { AuthContext } from '../../Context/Context'
 import { FirebaseContext } from '../../Context/FirebaseContext'
 import "./signUp.css"
 
 function SignUp() {
+    const history=useHistory()
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
     const {firebase} =useContext(FirebaseContext)
-    const {email}=useContext(AppContext)
+    const {email}=useContext(AuthContext)
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        console.log(firebase);
+        firebase.auth().createUserWithEmailAndPassword(email,password).then((result)=>{
+            result.user.updateProfile({displayName:username}).then(()=>{
+                firebase.firestore().collection('users').add({
+                    id:result.user.uid,
+                    username:username,
+                }).then(()=>{
+                    alert("Your account is created successfully.")
+                    history.push('/sign-in')
+                })
+
+
+            })
+        }).catch((error)=>{
+            alert(error.message)
+        })
     }
-    useEffect(()=>{
-        console.log(email);
-    })
+    
     
     return (
         <div>

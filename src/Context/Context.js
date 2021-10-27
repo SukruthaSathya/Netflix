@@ -1,16 +1,19 @@
 import {createContext,useState} from 'react'
 
 
-export const AppContext = createContext(null)
+export const AuthContext = createContext(null)
 
-function Post({children}){
+function Context({children}){
     const [email, setEmail] = useState('')
+    const [user,setUser]=useState('null')
+
     
     return(
-   <AppContext.Provider value={{email,setEmail}}>
+   <AuthContext.Provider value={{email,setEmail,user,setUser}}>
        {children}
-   </AppContext.Provider>
+   </AuthContext.Provider>
     )
 }
 
-export default Post
+export default Context
+

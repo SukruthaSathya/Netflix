@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import './signIn.css'
 import '../Netflix/Netflix.css'
+import { FirebaseContext } from '../../Context/FirebaseContext';
+import { useHistory } from 'react-router';
 
 
 function SignIn() {
+    const [email,setEmail]=useState('')
+    const [password,setPassword]=useState('')
+    const {firebase} = useContext(FirebaseContext)
+    const history=useHistory()
+
+    const handleLogin=(e)=>{
+        e.preventDefault()
+        firebase.auth().signInWithEmailAndPassword(email,password).then(()=>{
+            history.push('/home')
+        }).catch((error)=>{
+            alert(error.message)
+        })
+    }
+
     return (
         <div>
             <div className="signInPage">
@@ -21,10 +37,13 @@ function SignIn() {
                                     <h1>Sign In</h1>
                                 </div>
                                 <div className="formFill">
-                                    <form action="formContent">
-                                        <input className="formInput" type="email" name="" id="" placeholder="Email Address" />
-                                        <input className="formInput" type="password" placeholder="Password"/>
-                                        <button className="formSubmit">Sign In</button>
+                                    <form onSubmit={handleLogin} action="formContent">
+                                        <input value={email}
+                                        onChange={(e)=>setEmail(e.target.value)} 
+                                        className="formInput" type="email" name="" id="" placeholder="Email Address" />
+                                        <input value={password}
+                                        onChange={(e)=>setPassword(e.target.value)}  className="formInput" type="password" placeholder="Password"/>
+                                        <button type='submit' className="formSubmit">Sign In</button>
                                     </form>
                                 </div>
                                 <div className="signUpWay">

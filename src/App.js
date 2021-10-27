@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from './components/NavBar/Navbar';
 import "./App.css"
 import Banner from './components/Banner/Banner';
@@ -8,15 +8,23 @@ import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import { action, comedy, horror, originals, romance } from './urls'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Post from './Context/Context';
+import {  FirebaseContext } from './Context/FirebaseContext';
+import { AuthContext } from './Context/Context';
 
 
 function App() {
+  const {setUser}=useContext(AuthContext)
+  const {firebase}=useContext(FirebaseContext)
+  useEffect(()=>{
+    firebase.auth().onAuthStateChanged((user)=>{
+      setUser(user)
+    })
+  })
 
   return (
     <div className="App">
       <Router>
-        <Post>
+        
         <Route exact path="/">
           <Netflix />
         </Route>
@@ -35,7 +43,7 @@ function App() {
           <Rowpost title='Horror' url={horror} isSmall />
           <Rowpost title='Comedy' url={comedy} isSmall />
         </Route>
-        </Post>
+        
       </Router>
 
     </div>
