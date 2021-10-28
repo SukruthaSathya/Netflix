@@ -18,6 +18,7 @@ function Netflix() {
         history.push('/sign-up')
     }
     const handleSignIn=(e)=>{
+        
         e.preventDefault()
         history.push('/sign-in')
     }
