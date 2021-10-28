@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={ProcessingInstruction.env.PUBLIC_URL}>
         
         <Route exact path="/">
           <Netflix />
