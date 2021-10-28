@@ -51,3 +51,35 @@
     height: 7.5rem;
     background-image: linear-gradient(180deg,transparent,rgba(5, 4, 4, 0.61),black);
 }
+@media screen and (max-width: 500px){
+    .banner{
+background-size: contain;
+background-repeat: no-repeat;
+margin-top: 11%;
+height: auto;
+    }
+    .banner .content {
+        padding-top: 18%;
+        padding-left: 4%;
+    }
+    .banner .content .title {
+        font-size: 1rem;}
+        .button {
+            
+            font-weight: 500;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            margin-right: 0.8rem;
+        }
+        .description {
+            width: 100%;
+            padding-top: 0.5rem;
+            font-size: 65%;
+            height: auto;
+        }
+        .fade_bottom {
+            height: 2.5rem;}
+    
+}

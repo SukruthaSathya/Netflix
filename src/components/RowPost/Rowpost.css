@@ -33,3 +33,21 @@
 .smallPoster:hover{
     transform: scale(1.08);
 }
+@media screen and (max-width: 500px){
+.row {
+    margin-left: 15px;
+    color: #fff;
+}
+.row h2{
+    font-size: 120%;
+}
+.posters{
+    padding-left: 0;
+}
+.poster{
+    max-height: 175px;
+}
+.row iframe{
+    margin-left: -2%;
+}
+}

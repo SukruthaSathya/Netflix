@@ -45,6 +45,7 @@ function Rowpost(props) {
             </div>
            {  urlId &&   <Youtube videoId={urlId.key} opts={opts} /> }
         </div>
+        
     )
 }
 

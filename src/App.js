@@ -35,13 +35,21 @@ function App() {
           <SignUp/>
         </Route>
         <Route path="/home">
+          <div className="home">
+          <div>
           <Navbar />
+          </div>
+          <div>
           <Banner />
+          </div>
+          <div>
           <Rowpost title='Netflix Originals' url={originals} />
           <Rowpost title='Action' url={action} isSmall />
           <Rowpost title='Romance' url={romance} isSmall />
           <Rowpost title='Horror' url={horror} isSmall />
           <Rowpost title='Comedy' url={comedy} isSmall />
+          </div>
+          </div>
         </Route>
         
       </Router>

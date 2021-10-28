@@ -404,17 +404,17 @@ a:hover, :active{
         padding-top: 5%;
     }
     .headImg{
-        width: 200%;
-    }
+        width: 135%;
+        padding-top: 5%;    }
     .headLogo{
-        margin-right: 30%;
+        margin-right: 35%;width: 20%;
     }
     .headLang{
-        width: 25%;
+        width: 20%;
         margin: 0 2%;
     }
     .headLang i{
-        padding: 8% 5% 0;
+        padding: 6% 5% 0;
     font-size: 65%;
     }
     .headLang .Lang{
@@ -490,8 +490,8 @@ a:hover, :active{
         height: 35%;
     }
     .contentMain h1{
-        font-size: 115%;
-    padding-top: 10%;
+        font-size: 110%;
+        padding-top: 6%;
     text-align: center;
     }
     .contentMain h3{
@@ -500,8 +500,12 @@ a:hover, :active{
     }
     .contentImage{
         width: 85%;
-    height: 70%;
+    height: 72%;
     padding-left: 16%;
+    }
+    .contentImage img {
+        padding-top: 0%;
+    
     }
     .thirdContent{
         width: 100%;
@@ -570,5 +574,9 @@ a:hover, :active{
         width: 37%;
         margin-bottom: 3%;
     }
+    .lastLang i,.lastLang .Lang{
+        padding-top: 6%;
+    }
+    
 
 }
