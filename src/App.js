@@ -10,6 +10,7 @@ import { action, comedy, horror, originals, romance } from './urls'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import {  FirebaseContext } from './Context/FirebaseContext';
 import { AuthContext } from './Context/Context';
+import Footer from './Footer/Footer';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         
         <Route exact path="/">
           <Netflix />
+          <Footer/>
         </Route>
         <Route path="/sign-in">
           <SignIn/>
@@ -49,6 +51,7 @@ function App() {
           <Rowpost title='Horror' url={horror} isSmall />
           <Rowpost title='Comedy' url={comedy} isSmall />
           </div>
+          <Footer/>
           </div>
         </Route>
         
