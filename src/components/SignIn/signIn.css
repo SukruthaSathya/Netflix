@@ -84,12 +84,20 @@
 .signInForm .signUpWay,.formFoot{
     height: 10%;
     color: grey;
+    display: flex;
 }
-.signInForm .signUpWay p a{
+.signInForm .signUpWay p{
+    width: fit-content;
+    margin-right: 1%;
+}
+.signInForm .signUpWay  h3{
     color: white;
+    font-size: 100%;
+    width: fit-content;
 }
-.signInForm .signUpWay p a:hover{
+.signInForm .signUpWay  h3:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 .formFoot p{
     font-size: 75%;

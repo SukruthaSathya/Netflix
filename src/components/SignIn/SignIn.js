@@ -20,6 +20,11 @@ function SignIn() {
         })
     }
 
+    const handleSignUp=(e)=>{
+        e.preventDefault()
+        history.push('/')
+    }
+
     return (
         <div>
             <div className="signInPage">
@@ -47,7 +52,7 @@ function SignIn() {
                                     </form>
                                 </div>
                                 <div className="signUpWay">
-                                    <p>New to Netflix? <a href="/">Signup Now</a></p>
+                                    <p>New to Netflix? </p><h3 onClick={handleSignUp}>Signup Now</h3>
                                     
                                 </div>
                                 <div className="formFoot">
